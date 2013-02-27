@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>popup</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet" >
+        <link href="../css/bootstrap-responsive.min.css" rel="stylesheet" >
+        <style type="text/css">
+          .align *{
+            text-align:center!important;
+            vertical-align:middle!important;
+            font-size:10px!important;
+          }
+        </style>
+        <script src="../js/jquery-1.8.3.min.js"></script>
+        <script src="../js/popup.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container" id="container" style="width:375px">
+            <div id="header" class="page-header">
+                <div id="button"></div>
+                <h4 id="title">Loading...</h4>
+                <p style="font-size:10px" id="xhrRequest"></p>
+                <div class="progress progress-striped active" id="bar">
+                    <div class="bar"style="width: 0%;" id="progress"></div>
+                </div>
+                <div class="pull-right">
+                    <a class='align btn btn-small' id='config' href='../html/options.html'>设置</a>&nbsp;&nbsp;
+                    <a class='align btn btn btn-small btn-success' id='fun'>FUN</a>
+                </div>
+            </div>
+            <div id="cache" style="display: none"></div>
+            <div id="result"></div>
+            <footer id="footer">
+                <hr>
+                <code>如果长时间没有响应，请重新设置您的用户信息或检查您的网络连接</code><br /><br />
+                <p class='muted credit'>Provided by yamamaki</p>
+            </footer>
+        </div>
+    </body>
+</html>
+
